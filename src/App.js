@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {Navbar} from 'react-bootstrap'
 import { connect } from 'react-redux'
-import fetchCats from './actions/catActions'
+import * as actions from './actions/catActions'
 import CatList from './CatList'
+
+const fetchCats = actions.fetchCats
 
 class App extends Component {
 
